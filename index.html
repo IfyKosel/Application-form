@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Application form</title>
+</head>
+<body>
+    <div class="container bg-info" id="box">
+        <div class="row">
+
+            <!--    the image in the form   -->
+            <div class="col-md-5 pl-0">
+                <img src="picture.jpg" alt="picture used with the form">
+            </div>
+
+            <!--    the form section    -->
+            <div class="col-md-7 py-3">
+                <form action="##" method="##" autocomplete="on">
+                    <div class="row">
+                        <div class="col-sm-6 marge">
+                            <label for="firstname"> First Name <span class="asterisk">*</span></label>
+                            <input type="text" id="firstname" name="firstname" class="form-control" placeholder="First name" required>
+                        </div>
+                        <div class="col-sm-6 marge">
+                            <label for="lastname"> Last Name <span class="asterisk">*</span></label>
+                            <input type="text" id="lastname" name="lastname" class="form-control" placeholder="Last name" required>
+                        </div>
+                        <div class="col-sm-6 marge">
+                            <label for="email"> Email <span class="asterisk">*</span></label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="col-sm-6 marge">
+                            <label for="gender"> Gender <span class="asterisk">*</span></label>
+                            <!--    the select tag is used for dropdowns    -->
+                            <select name="gender" id="gender" class="form-control">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-6 marge">
+                            <label for="position"> Previous position held </label>
+                            <input type="text" id="position" name="position" class="form-control" placeholder="Last position held at work">
+                        </div>
+                        <div class="col-sm-6 marge">
+                            <label for="category"> Category <span class="asterisk">*</span></label>
+                            <select name="category" id="category" class="form-control" >
+                                <option value="none">None</option>
+                                <option value="administration">Administration</option>
+                                <option value="banking and finance">Banking and Finance</option>
+                                <option value="education">Education</option>
+                                <option value="engineering">Engineering</option>
+                                <option value="fashion and design">Fashion and Design</option>
+                                <option value="information $ technology">Information and Technology</option>
+                                <option value="mining and manufacturing">Mining and Manufacturing</option>
+                                <option value="real estate">Real Estate</option>
+                                <option value="sales and marketing">Sales and Marketing</option>
+                            </select>   
+                        </div>
+                        <div class="col-sm-6 marge">
+                            <label for="date"> Date of birth<span class="asterisk">*</span></label>
+                            <input type="date" id="date" name="date" class="form-control" min="1985-01-01" max="2023-12-31" required>
+                        </div>
+                        <div class="col-sm-6 marge">
+                            <label for="phone"> Phone <span class="asterisk">*</span></label>
+                            <input type="number" id="phone" name="phone" class="form-control" placeholder="Enter your phone number" required>
+                        </div>
+                        <div class="col-sm-12 marge">
+                            <label for="url"> Website <span class="asterisk">*</span></label>
+                            <input type="url" id="url" name="url" class="form-control" placeholder="Enter the link to a verifiable portfolio of your previous projects" required>
+                        </div>
+                        <div class="col-sm-12 marge" id="check">
+                            <input type="radio" id="t&c" name="t&c" required>
+                            <label for="t&c" id="terms">By clicking on this button you have agreed to our <a href="##" class="text-danger">terms and conditions</a>                                
+                                <span class="asterisk">*</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <input type="submit" value="Submit details" class="btn btn-md btn-outline-light">
+                    </div>                      
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
